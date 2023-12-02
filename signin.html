@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Đăng ký</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <style>
+            .k{
+                height: 30px;
+                top: 50px;
+                position: relative;
+                background-color: #E66B09;
+                text-align: left;
+            }
+            .k ul li{
+                position: relative;
+                float: left;
+                list-style: none;
+                margin-right: 40px;
+                line-height: 20px;
+                position: relative;
+            }
+            .k ul li a{
+                text-decoration: none;
+                color: black;
+            }
+            .k ul li a:hover{
+                color: #E66B09;
+                background-color: black;
+            }
+        </style>
+        <script>
+            function check(){
+                var x=document.getElementById("i");
+                var name=document.getElementById("a").value;
+                var tuoi=document.getElementById("tuoi").value;
+                var sdt=document.getElementById("sdt").value;
+                if (name==false)
+                {alert("Bạn vui lòng nhập tên.");return 0;}
+                if (tuoi==false)
+                {alert("Bạn vui lòng nhập tuổi.");return 0;}
+                if (sdt==false)
+                {alert("Bạn vui lòng nhập số điện thoại.");return 0;}  
+                if(!x.checked)
+                {alert("Bạn vui lòng đọc và đồng ý với các quy định của buổi tiệc.");return 0;}           
+                {alert("Cảm ơn bạn "+name+" đã đăng ký tham dự buổi tiệc.");}
+            }
+        </script>
+    </head>
+
+    <body style="background-color: rgb(37, 37, 37);max-width: 1500px;">
+        <div style="margin-top: 10px;">
+             <a href="index.html" style="position: relative; left: 380px"><img src="halloween/logo.jpg" width="600px" height="auto"></a>
+        </div>
+        <div>
+            <div class="k">
+                <ul>
+                    <li class="d-flex justify-content-center align-items-center"><a href="index.html" style="font-size: larger;margin-bottom: 0;">Trang chủ</a></li>
+                    <li><a href="Lore.html">Lore</a></li>
+                    <li><a href="hinh.html">Bộ sưu tập</a></li>
+                    <li><a href="bando.html">Cửa hàng</a></li>
+                    <li><a href="signin.html">Đăng ký</a></li>
+                    <li  style="margin-right: 0px;"><a href="Lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div style="position: relative; top: 100px;">
+                <div class="card">
+                    <div class="card-header">
+                      Đăng Ký
+                    </div>
+                    <div class="card-body"  style="background-color:  rgb(37, 37, 37); color: white;">
+                      <p class="card-text">
+                        *Họ tên
+                        <input id="a" style="margin-left: 45px; width: 300px;" type="text" placeholder="Nhập họ tên của bạn"><br><br>
+                        *Tuổi
+                        <input id="tuoi" style="margin-left: 65px;  width: 300px;" type="text" placeholder="Nhập tuổi"><br><br>
+                        Email
+                        <input style="margin-left: 65px;  width: 300px;" type="text"><br><br>
+                        *Số điện thoại 
+                        <input id="sdt" style="margin-left: 5px;  width: 300px;" type="text"><br><br>
+                        <input id="i" type="checkbox">
+                        Tôi đồng ý với <a href="#"> các quy định</a> của buôi tiệc
+                      </p>
+                      <button onclick="check()">Summit</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </body>

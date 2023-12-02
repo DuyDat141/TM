@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Liên hệ</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <style>
+            .k{
+                height: 30px;
+                top: 50px;
+                position: relative;
+                background-color: #E66B09;
+                text-align: left;
+            }
+            .k ul li{
+                position: relative;
+                float: left;
+                list-style: none;
+                margin-right: 40px;
+                line-height: 20px;
+                position: relative;
+            }
+            .k ul li a{
+                text-decoration: none;
+                color: black;
+            }
+            .k ul li a:hover{
+                color: #E66B09;
+                background-color: black;
+            }
+        </style>
+        <script lang="javascript">
+            function check(){
+                var a=document.getElementById("a").value;
+                if (a.length > 0)
+                {alert("Cảm ơn bạn đã phản hồi.");}
+            }
+        </script>
+    </head>
+
+    <body style="background-color: rgb(37, 37, 37);max-width: 1500px;">
+        <div style="margin-top: 10px;">
+             <a href="index.html" style="position: relative; left: 380px"><img src="halloween/logo.jpg" width="600px" height="auto"></a>
+         </div>
+         <div>
+            <div class="k">
+                <ul>
+                    <li class="d-flex justify-content-center align-items-center"><a href="index.html" style="font-size: larger;margin-bottom: 0;">Trang chủ</a></li>
+                    <li><a href="Lore.html">Lore</a></li>
+                    <li><a href="hinh.html">Bộ sưu tập</a></li>
+                    <li><a href="bando.html">Cửa hàng</a></li>
+                    <li><a href="signin.html">Đăng ký</a></li>
+                    <li  style="margin-right: 0px;"><a href="Lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div style="position: relative; top: 100px;">
+                <div class="card">
+                    <div class="card-header">
+                      FEEDBACK
+                    </div>
+                    <div class="card-body"  style="background-color:  rgb(37, 37, 37); color: white;">
+                      <p class="card-text">
+                        <textarea id="a" style="width: 1000px; height: 300px;"></textarea>
+                      </p>
+                      <button onclick="check()">Submit</button>
+                    </div>
+                  </div>
+            </div>
+            <br><br><br>
+            <div style=" position: relative; top: 100px; color: white; border: 1px solid white; border-radius: 5px;">
+                <h3>LIÊN HỆ TRỰC TIẾP</h3>
+                -Facebook: <a href="https://www.facebook.com/profile.php?id=100035084199381" target="_blank">Duy Đạt</a><br>
+                -Zalo: <a style="font-size: xx-small;">https://zalo.me/muon%biet%thi%len%nhom%zalo%tim%taikhoan%ten%duydat%a%chu%cai%link%zalo%cua%tui%bi%gi%roi</a>
+            </div>
+         </div>
+    </body>            
